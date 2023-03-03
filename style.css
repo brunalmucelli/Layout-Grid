@@ -1,11 +1,19 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.box{
+.box {
     background: #bdbdbd;
-    border:  2px solid #333;
+    border: 2px solid #333;
     padding: 10px;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    /* : 1fr 1fr 1fr*/
+    grid-template-rows: repeat(3, 1fr);
 }
